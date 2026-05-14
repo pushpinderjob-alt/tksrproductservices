@@ -41,9 +41,34 @@
             line-height: 1.8;
         }
 
-        #ceo-message h3 {
-            margin-top: 25px;
+        /* CEO Signature Styling */
+        .ceo-signature {
+            margin-top: 35px;
+            line-height: 1.8;
+        }
+
+        .ceo-name {
+            font-size: 2.2rem;
+            font-weight: 900;
             color: #ffffff;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: inline-block;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .ceo-title {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #00d4ff;
+            padding: 8px 18px;
+            border-radius: 40px;
+            border: 1px solid rgba(0, 212, 255, 0.5);
+            background: rgba(0, 212, 255, 0.08);
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.25);
+            letter-spacing: 1px;
         }
 
         /* Contact Icons */
@@ -69,6 +94,10 @@
             #ceo-message .split {
                 flex-direction: column;
                 text-align: center;
+            }
+
+            .ceo-name {
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -122,97 +151,50 @@
         <!-- About -->
         <section id="one" class="wrapper style2 spotlights">
 
-            <!-- About 1 -->
             <section>
-
                 <a href="#" class="image">
-                    <img src="images/pic01.jpg"
-                        alt="AI Solutions"
-                        data-position="center center" />
+                    <img src="images/pic01.jpg" alt="AI Solutions" />
                 </a>
-
                 <div class="content">
                     <div class="inner">
-
                         <h2>Who We Are</h2>
-
                         <p>
                             TKSR Product Services is an AI-focused technology company
                             dedicated to building next-generation software products
                             for modern enterprises.
                         </p>
-
-                        <ul class="actions">
-                            <li>
-                                <a href="#two" class="button">Learn More</a>
-                            </li>
-                        </ul>
-
                     </div>
                 </div>
-
             </section>
 
-            <!-- About 2 -->
             <section>
-
                 <a href="#" class="image">
-                    <img src="images/pic02.jpg"
-                        alt="AI HR Copilot"
-                        data-position="top center" />
+                    <img src="images/pic02.jpg" alt="AI HR Copilot" />
                 </a>
-
                 <div class="content">
                     <div class="inner">
-
                         <h2>AI HR Copilot</h2>
-
                         <p>
                             Our AI HR Copilot assists organizations with intelligent hiring,
-                            employee engagement, automated HR workflows, policy guidance,
-                            and AI-driven support systems.
+                            employee engagement, automated HR workflows, and AI-driven support.
                         </p>
-
-                        <ul class="actions">
-                            <li>
-                                <a href="#three" class="button">Request Demo</a>
-                            </li>
-                        </ul>
-
                     </div>
                 </div>
-
             </section>
 
-            <!-- About 3 -->
             <section>
-
                 <a href="#" class="image">
-                    <img src="images/pic03.jpg"
-                        alt="Enterprise AI"
-                        data-position="25% 25%" />
+                    <img src="images/pic03.jpg" alt="Enterprise AI" />
                 </a>
-
                 <div class="content">
                     <div class="inner">
-
                         <h2>Enterprise AI Products</h2>
-
                         <p>
-                            We help businesses adopt AI through scalable applications,
-                            automation tools, conversational assistants, analytics,
-                            and custom AI integrations.
+                            We help businesses adopt AI through automation tools,
+                            chatbots, analytics, and custom AI integrations.
                         </p>
-
-                        <ul class="actions">
-                            <li>
-                                <a href="#three" class="button">Contact Us</a>
-                            </li>
-                        </ul>
-
                     </div>
                 </div>
-
             </section>
 
         </section>
@@ -224,17 +206,12 @@
 
                 <div class="split style1">
 
-                    <!-- CEO Image -->
                     <section>
-
                         <span class="image fit">
-                            <img src="images/ceo.jpg"
-                                alt="CEO TKSR Product Services" />
+                            <img src="images/ceo.jpg" alt="CEO TKSR Product Services" />
                         </span>
-
                     </section>
 
-                    <!-- CEO Content -->
                     <section>
 
                         <h2>Message From Our CEO</h2>
@@ -245,27 +222,23 @@
                         </p>
 
                         <p>
-                            We founded this organization with a mission to become a globally recognized
-                            leader in Artificial Intelligence, enterprise automation, and intelligent
-                            business transformation.
+                            We aim to become a globally recognized leader in Artificial Intelligence,
+                            enterprise automation, and intelligent transformation.
                         </p>
 
                         <p>
-                            As industrial leaders and technology innovators, we believe AI will redefine
-                            the future of every industry. Our commitment is to create scalable,
-                            secure, and human-centric AI products that deliver real business impact.
+                            We believe AI will redefine every industry, and we are committed to building
+                            scalable, secure, and human-centric AI products.
                         </p>
 
                         <p>
-                            Through continuous innovation, strategic thinking, and customer-focused
-                            development, TKSR Product Services is working toward becoming a world-leading
-                            organization in enterprise AI solutions.
+                            Through continuous innovation and customer-focused development,
+                            we are shaping the future of enterprise AI.
                         </p>
 
-                        <h3>
-                            — Pushpinder Singh <br />
-                              CEO & Founder <br />
-                            TKSR Product Services
+                        <h3 class="ceo-signature">
+                            <span class="ceo-name">Pushpinder Singh</span><br />
+                            <span class="ceo-title">CEO & Founder</span>
                         </h3>
 
                     </section>
@@ -278,226 +251,92 @@
 
         <!-- Services -->
         <section id="two" class="wrapper style3 fade-up">
-
             <div class="inner">
 
                 <h2>Our Services</h2>
 
-                <p>
-                    We provide AI-driven digital solutions that improve efficiency,
-                    reduce manual work, and accelerate business growth.
-                </p>
-
                 <div class="features">
 
-                    <!-- Service 1 -->
                     <section>
                         <span class="icon solid major fa-robot"></span>
-
                         <h3>AI Product Development</h3>
-
-                        <p>
-                            End-to-end AI application development tailored to business needs.
-                        </p>
                     </section>
 
-                    <!-- Service 2 -->
                     <section>
                         <span class="icon solid major fa-users"></span>
-
                         <h3>AI HR Copilot</h3>
-
-                        <p>
-                            Smart HR assistant for recruitment, onboarding, and employee engagement.
-                        </p>
                     </section>
 
-                    <!-- Service 3 -->
                     <section>
                         <span class="icon solid major fa-brain"></span>
-
                         <h3>Machine Learning Solutions</h3>
-
-                        <p>
-                            Intelligent systems powered by predictive analytics and AI models.
-                        </p>
                     </section>
 
-                    <!-- Service 4 -->
                     <section>
                         <span class="icon solid major fa-comments"></span>
-
                         <h3>AI Chatbots</h3>
-
-                        <p>
-                            Conversational AI assistants for customer and employee support.
-                        </p>
                     </section>
 
-                    <!-- Service 5 -->
                     <section>
                         <span class="icon solid major fa-cloud"></span>
-
                         <h3>Cloud Integration</h3>
-
-                        <p>
-                            Scalable cloud-native AI platforms and enterprise integrations.
-                        </p>
                     </section>
 
-                    <!-- Service 6 -->
                     <section>
                         <span class="icon solid major fa-chart-line"></span>
-
                         <h3>Business Automation</h3>
-
-                        <p>
-                            Automating repetitive workflows using AI-powered systems.
-                        </p>
                     </section>
 
                 </div>
 
-                <ul class="actions">
-                    <li>
-                        <a href="#three" class="button">Get Started</a>
-                    </li>
-                </ul>
-
             </div>
-
         </section>
 
         <!-- Contact -->
         <section id="three" class="wrapper style1 fade-up">
-
             <div class="inner">
 
                 <h2>Get In Touch</h2>
 
-                <p>
-                    Interested in AI-powered business solutions?
-                    Contact TKSR Product Services to discuss your requirements.
-                </p>
-
                 <div class="split style1">
 
-                    <!-- Contact Form -->
                     <section>
-
-                        <form method="post" action="#">
-
-                            <div class="fields">
-
-                                <div class="field half">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" id="name" />
-                                </div>
-
-                                <div class="field half">
-                                    <label for="email">Email</label>
-                                    <input type="text" name="email" id="email" />
-                                </div>
-
-                                <div class="field">
-                                    <label for="message">Message</label>
-                                    <textarea name="message"
-                                        id="message"
-                                        rows="5"></textarea>
-                                </div>
-
-                            </div>
-
-                            <ul class="actions">
-                                <li>
-                                    <input type="submit"
-                                        value="Send Message"
-                                        class="button submit" />
-                                </li>
-                            </ul>
-
+                        <form method="post">
+                            <input type="text" name="name" placeholder="Name" />
+                            <input type="text" name="email" placeholder="Email" />
+                            <textarea name="message" placeholder="Message"></textarea>
+                            <input type="submit" value="Send Message" />
                         </form>
-
                     </section>
 
-                    <!-- Contact Info -->
                     <section>
-
                         <ul class="contact">
-
-                            <li>
-                                <h3>Company</h3>
-                                <span>TKSR Product Services</span>
-                            </li>
-
-                            <li>
-                                <h3>Email</h3>
-                                <span>info@tksrproductservices.com</span>
-                            </li>
-
-                            <li>
-                                <h3>Services</h3>
-
-                                <span>
-                                    AI Products<br />
-                                    AI HR Copilot<br />
-                                    Enterprise Automation
-                                </span>
-                            </li>
-
-                            <li>
-
-                                <h3>Social</h3>
-
-                                <ul class="icons">
-                                    <li>
-                                        <a href="#">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">
-                                            <i class="fab fa-github"></i>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">
-                                            <i class="fab fa-x-twitter"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </li>
-
+                            <li>Email: info@tksrproductservices.com</li>
                         </ul>
 
+                        <ul class="icons">
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-github"></i></a></li>
+                            <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
+                        </ul>
                     </section>
 
                 </div>
 
             </div>
-
         </section>
 
     </div>
 
-    <!-- Footer -->
     <footer id="footer" class="wrapper style1-alt">
-
         <div class="inner">
-
             <ul class="menu">
-                <li>&copy; TKSR Product Services. All rights reserved.</li>
-                <li>Building AI-Powered Enterprise Solutions</li>
+                <li>&copy; TKSR Product Services</li>
+                <li>AI-Powered Enterprise Solutions</li>
             </ul>
-
         </div>
-
     </footer>
 
-    <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
