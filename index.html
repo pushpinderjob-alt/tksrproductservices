@@ -1,355 +1,355 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>TKSR Product Services - AI Solutions</title>
+    <title>TKSR | Enterprise AI Systems</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
-
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" />
-    </noscript>
-
     <style>
-        /* CEO Section Styling */
-        #ceo-message .split {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-            flex-wrap: wrap;
+
+        body {
+            background: #05070d;
+            color: #eaeaea;
+            font-family: "Inter", sans-serif;
         }
 
-        #ceo-message .image img {
-            width: 100%;
-            max-width: 420px;
-            border-radius: 15px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+        /* ================= HERO ================= */
+
+        #intro {
+            position: relative;
+            overflow: hidden;
         }
 
-        #ceo-message h2 {
+        #hero-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: -2;
+            filter: brightness(0.45);
+        }
+
+        .video-overlay {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(0,212,255,0.12), rgba(0,0,0,0.92));
+            z-index: -1;
+        }
+
+        #intro h1 {
+            font-size: 3rem;
+            font-weight: 800;
+        }
+
+        #intro p {
+            max-width: 750px;
+            line-height: 1.7;
+            opacity: 0.85;
+        }
+
+        .button {
+            background: linear-gradient(135deg, #00d4ff, #0066ff);
+            color: #000;
+            font-weight: 700;
+            border-radius: 10px;
+            padding: 14px 26px;
+            border: none;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+        }
+
+        /* ================= ABOUT ================= */
+
+        #one {
+            background: #0a0f1c;
+        }
+
+        section.wrapper {
+            padding: 90px 0;
+        }
+
+        h2 {
+            font-size: 2.2rem;
             margin-bottom: 20px;
         }
 
-        #ceo-message p {
-            margin-bottom: 18px;
+        p {
             line-height: 1.8;
+            opacity: 0.85;
         }
 
-        /* CEO Signature Styling */
-        .ceo-signature {
-            margin-top: 35px;
-            line-height: 1.8;
+        /* ================= SERVICES (FULL RESET FIX) ================= */
+
+        #two .features {
+            display: grid !important;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+            gap: 22px !important;
+            margin-top: 30px;
+        }
+
+        /* COMPLETE RESET of template CSS conflict */
+        #two .features section {
+            all: unset;
+            display: block;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            padding: 26px;
+            border-radius: 14px;
+            color: #fff;
+            position: relative;
+            transition: 0.3s ease;
+        }
+
+        #two .features section:hover {
+            transform: translateY(-6px);
+            border-color: rgba(0,212,255,0.5);
+        }
+
+        /* ICON FIX */
+        #two .features section i {
+            all: unset;
+            display: block;
+            font-size: 2.2rem;
+            color: #00d4ff;
+            margin-bottom: 14px;
+        }
+
+        /* TITLE FIX */
+        #two .features section h3 {
+            all: unset;
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        /* TEXT FIX */
+        #two .features section p {
+            all: unset;
+            display: block;
+            font-size: 0.95rem;
+            opacity: 0.8;
+            color: #cfcfcf;
+        }
+
+        /* ================= CEO ================= */
+
+        #ceo-message {
+            background: linear-gradient(180deg, #05070d, #0a0f1c);
+        }
+
+        #ceo-message img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 25px 70px rgba(0,0,0,0.6);
         }
 
         .ceo-name {
-            font-size: 2.2rem;
+            font-size: 2rem;
             font-weight: 900;
-            color: #ffffff;
             letter-spacing: 2px;
-            text-transform: uppercase;
-            display: inline-block;
-            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         }
 
         .ceo-title {
             display: inline-block;
-            margin-top: 12px;
-            font-size: 1.1rem;
-            font-weight: 700;
+            margin-top: 10px;
+            padding: 8px 14px;
+            border-radius: 50px;
+            background: rgba(0,212,255,0.08);
+            border: 1px solid rgba(0,212,255,0.3);
             color: #00d4ff;
-            padding: 8px 18px;
-            border-radius: 40px;
-            border: 1px solid rgba(0, 212, 255, 0.5);
-            background: rgba(0, 212, 255, 0.08);
-            box-shadow: 0 0 15px rgba(0, 212, 255, 0.25);
-            letter-spacing: 1px;
         }
 
-        /* Contact Icons */
-        .icons {
-            display: flex;
-            gap: 15px;
-            list-style: none;
-            padding: 0;
+        /* ================= CONTACT ================= */
+
+        form input, form textarea {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.05);
+            color: #fff;
+            outline: none;
+        }
+
+        form button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #00d4ff, #0066ff);
+            border: none;
+            font-weight: 700;
+            color: #000;
+            border-radius: 10px;
         }
 
         .icons a {
-            font-size: 22px;
-            color: #ffffff;
-            transition: 0.3s ease;
+            color: #aaa;
+            margin-right: 12px;
+            font-size: 20px;
         }
 
         .icons a:hover {
             color: #00d4ff;
         }
 
-        /* Responsive */
-        @media screen and (max-width: 768px) {
-            #ceo-message .split {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .ceo-name {
-                font-size: 1.8rem;
-            }
-        }
     </style>
 </head>
 
-<body class="is-preload">
+<body>
 
-    <!-- Sidebar -->
-    <section id="sidebar">
-        <div class="inner">
-            <nav>
-                <ul>
-                    <li><a href="#intro">Home</a></li>
-                    <li><a href="#one">About Us</a></li>
-                    <li><a href="#ceo-message">CEO Message</a></li>
-                    <li><a href="#two">Services</a></li>
-                    <li><a href="#three">Contact</a></li>
-                </ul>
-            </nav>
+<!-- ================= HERO ================= -->
+<section id="intro" class="wrapper fullscreen fade-up">
+
+    <video autoplay muted loop playsinline id="hero-video">
+        <source src="videos/hero-video.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <div class="inner">
+        <h1>Enterprise AI Systems for Global Transformation</h1>
+
+        <p>
+            We build intelligent AI infrastructure that powers automation,
+            decision intelligence, and enterprise-scale transformation.
+        </p>
+
+        <a href="#two" class="button">Explore Capabilities</a>
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="one" class="wrapper">
+    <div class="inner">
+
+        <h2>About TKSR Product Services</h2>
+
+        <p>
+            TKSR Product Services builds enterprise-grade AI systems, automation platforms,
+            and scalable intelligence infrastructure for global businesses.
+        </p>
+
+        <p>
+            Our mission is to redefine enterprise operations using secure, intelligent, and adaptive AI systems.
+        </p>
+
+    </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="two" class="wrapper">
+    <div class="inner">
+
+        <h2>Core AI Capabilities</h2>
+
+        <div class="features">
+
+            <section>
+                <i class="fa-solid fa-brain"></i>
+                <h3>AI Intelligence Systems</h3>
+                <p>Advanced decision-making and machine learning systems.</p>
+            </section>
+
+            <section>
+                <i class="fa-solid fa-robot"></i>
+                <h3>Automation Platforms</h3>
+                <p>End-to-end enterprise workflow automation systems.</p>
+            </section>
+
+            <section>
+                <i class="fa-solid fa-cloud"></i>
+                <h3>Cloud Infrastructure</h3>
+                <p>Scalable cloud-native AI deployment architecture.</p>
+            </section>
+
+            <section>
+                <i class="fa-solid fa-shield"></i>
+                <h3>Secure AI Systems</h3>
+                <p>Enterprise-grade compliance and security frameworks.</p>
+            </section>
+
+            <section>
+                <i class="fa-solid fa-comments"></i>
+                <h3>AI Assistants</h3>
+                <p>Human-like AI systems for enterprise operations.</p>
+            </section>
+
+            <section>
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Business Intelligence</h3>
+                <p>Predictive analytics for enterprise decision-making.</p>
+            </section>
+
         </div>
-    </section>
 
-    <!-- Wrapper -->
-    <div id="wrapper">
+    </div>
+</section>
 
-        <!-- Intro -->
-        <section id="intro" class="wrapper style1 fullscreen fade-up">
-            <div class="inner">
+<!-- ================= CEO ================= -->
+<section id="ceo-message" class="wrapper">
+    <div class="inner split">
 
-                <h1>TKSR Product Services</h1>
-
-                <p>
-                    We build intelligent AI-powered products that help businesses
-                    automate operations, improve productivity, and make smarter decisions.
-                </p>
-
-                <p>
-                    Our flagship solution, <strong>AI HR Copilot</strong>, helps HR teams
-                    streamline recruitment, employee support, onboarding, and workforce management using AI.
-                </p>
-
-                <ul class="actions">
-                    <li>
-                        <a href="#two" class="button scrolly">Explore Services</a>
-                    </li>
-                </ul>
-
-            </div>
+        <section>
+            <img src="images/ceo.jpg" alt="CEO" />
         </section>
 
-        <!-- About -->
-        <section id="one" class="wrapper style2 spotlights">
+        <section>
 
-            <section>
-                <a href="#" class="image">
-                    <img src="images/pic01.jpg" alt="AI Solutions" />
-                </a>
-                <div class="content">
-                    <div class="inner">
-                        <h2>Who We Are</h2>
-                        <p>
-                            TKSR Product Services is an AI-focused technology company
-                            dedicated to building next-generation software products
-                            for modern enterprises.
-                        </p>
-                    </div>
-                </div>
-            </section>
+            <h2>Leadership Vision</h2>
 
-            <section>
-                <a href="#" class="image">
-                    <img src="images/pic02.jpg" alt="AI HR Copilot" />
-                </a>
-                <div class="content">
-                    <div class="inner">
-                        <h2>AI HR Copilot</h2>
-                        <p>
-                            Our AI HR Copilot assists organizations with intelligent hiring,
-                            employee engagement, automated HR workflows, and AI-driven support.
-                        </p>
-                    </div>
-                </div>
-            </section>
+            <p>
+                We are building foundational AI systems that define the future of global enterprise computing.
+            </p>
 
-            <section>
-                <a href="#" class="image">
-                    <img src="images/pic03.jpg" alt="Enterprise AI" />
-                </a>
-                <div class="content">
-                    <div class="inner">
-                        <h2>Enterprise AI Products</h2>
-                        <p>
-                            We help businesses adopt AI through automation tools,
-                            chatbots, analytics, and custom AI integrations.
-                        </p>
-                    </div>
-                </div>
-            </section>
+            <h3 class="ceo-name">PUSHPINDER SINGH</h3>
+            <span class="ceo-title">Founder & CEO</span>
 
         </section>
 
-        <!-- CEO Message -->
-        <section id="ceo-message" class="wrapper style1 fade-up">
+    </div>
+</section>
 
-            <div class="inner">
+<!-- ================= CONTACT ================= -->
+<section id="three" class="wrapper">
+    <div class="inner split">
 
-                <div class="split style1">
+        <section>
+            <h2>Request Access</h2>
 
-                    <section>
-                        <span class="image fit">
-                            <img src="images/ceo.jpg" alt="CEO TKSR Product Services" />
-                        </span>
-                    </section>
-
-                    <section>
-
-                        <h2>Message From Our CEO</h2>
-
-                        <p>
-                            At TKSR Product Services, our vision is to build world-class AI solutions
-                            that empower businesses to innovate, automate, and lead in the digital era.
-                        </p>
-
-                        <p>
-                            We aim to become a globally recognized leader in Artificial Intelligence,
-                            enterprise automation, and intelligent transformation.
-                        </p>
-
-                        <p>
-                            We believe AI will redefine every industry, and we are committed to building
-                            scalable, secure, and human-centric AI products.
-                        </p>
-
-                        <p>
-                            Through continuous innovation and customer-focused development,
-                            we are shaping the future of enterprise AI.
-                        </p>
-
-                        <h3 class="ceo-signature">
-                            <span class="ceo-name">Pushpinder Singh</span><br />
-                            <span class="ceo-title">CEO & Founder</span>
-                        </h3>
-
-                    </section>
-
-                </div>
-
-            </div>
-
+            <form action="https://formspree.io/f/mdabrpdj" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required />
+                <input type="email" name="email" placeholder="Business Email" required />
+                <textarea name="message" rows="6" placeholder="Your Requirement"></textarea>
+                <button type="submit">Submit Request</button>
+            </form>
         </section>
 
-        <!-- Services -->
-        <section id="two" class="wrapper style3 fade-up">
-            <div class="inner">
+        <section>
+            <h3>Contact</h3>
+            <p>info@tksrproductservices.com</p>
 
-                <h2>Our Services</h2>
-
-                <div class="features">
-
-                    <section>
-                        <span class="icon solid major fa-robot"></span>
-                        <h3>AI Product Development</h3>
-                    </section>
-
-                    <section>
-                        <span class="icon solid major fa-users"></span>
-                        <h3>AI HR Copilot</h3>
-                    </section>
-
-                    <section>
-                        <span class="icon solid major fa-brain"></span>
-                        <h3>Machine Learning Solutions</h3>
-                    </section>
-
-                    <section>
-                        <span class="icon solid major fa-comments"></span>
-                        <h3>AI Chatbots</h3>
-                    </section>
-
-                    <section>
-                        <span class="icon solid major fa-cloud"></span>
-                        <h3>Cloud Integration</h3>
-                    </section>
-
-                    <section>
-                        <span class="icon solid major fa-chart-line"></span>
-                        <h3>Business Automation</h3>
-                    </section>
-
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="three" class="wrapper style1 fade-up">
-            <div class="inner">
-
-                <h2>Get In Touch</h2>
-
-                <div class="split style1">
-
-                    <section>
-                        <form action="https://formspree.io/f/mdabrpdj" method="POST">
-
-    <input type="text" name="name" placeholder="Your Name" required />
-
-    <input type="email" name="email" placeholder="Your Email" required />
-
-    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-
-    <button type="submit">Send Message</button>
-
-</form>
-                            
-                    </section>
-
-                    <section>
-                        <ul class="contact">
-                            <li>Email: info@tksrproductservices.com</li>
-                        </ul>
-
-                        <ul class="icons">
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#"><i class="fab fa-github"></i></a></li>
-                            <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
-                        </ul>
-                    </section>
-
-                </div>
-
+            <div class="icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
             </div>
         </section>
 
     </div>
-
-    <footer id="footer" class="wrapper style1-alt">
-        <div class="inner">
-            <ul class="menu">
-                <li>&copy; TKSR Product Services</li>
-                <li>AI-Powered Enterprise Solutions</li>
-            </ul>
-        </div>
-    </footer>
-
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+</section>
 
 </body>
 </html>
