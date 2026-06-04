@@ -69,6 +69,17 @@
             transform: translateY(-3px);
         }
 
+        /* HERO CTA alignment */
+        .hero-cta {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 18px;
+            text-align: center;
+            line-height: 1;
+        }
+
+
+
         /* ================= ABOUT ================= */
 
         #one {
@@ -188,12 +199,19 @@
         form button {
             width: 100%;
             padding: 14px;
+            display: block;
+            margin-top: 6px;
             background: linear-gradient(135deg, #00d4ff, #0066ff);
             border: none;
             font-weight: 700;
             color: #000;
             border-radius: 10px;
+
+            /* center text vertically/horizontally */
+            line-height: 1;
+            text-align: center;
         }
+
 
         .icons a {
             color: #aaa;
@@ -267,7 +285,7 @@
             decision intelligence, and enterprise-scale transformation.
         </p>
 
-        <a href="#two" class="button">Explore Capabilities</a>
+        <a href="#two" class="button hero-cta">Explore Capabilities</a>
     </div>
 </section>
 
