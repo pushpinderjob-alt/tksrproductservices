@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TKSR | Enterprise AI Systems</title>
+
+<meta name="description"
+   content="TKSR Product Services builds enterprise AI systems, automation platforms, cloud infrastructure, and intelligent business solutions for global organizations.">
+
+<meta name="keywords"
+   content="Enterprise AI, Artificial Intelligence, Machine Learning, Automation, AI Consulting, Cloud Infrastructure, Business Intelligence">
+
+<meta name="author" content="TKSR Product Services">
+
+<meta property="og:title" content="TKSR | Enterprise AI Systems">
+<meta property="og:description"
+      content="Enterprise-grade AI systems for global transformation.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/og-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TKSR | Enterprise AI Systems">
+<meta name="twitter:description"
+      content="Enterprise-grade AI systems for global transformation.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="assets/css/main.css" />
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#05070d;
+    color:#ffffff;
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+.wrapper{
+    padding:100px 8%;
+}
+
+.inner{
+    max-width:1300px;
+    margin:auto;
+}
+
+h1,h2,h3,h4{
+    line-height:1.2;
+}
+
+p{
+    line-height:1.8;
+    color:#c7c7c7;
+}
+
+section{
+    position:relative;
+}
+
+/* ======================================
+   NAVBAR
+====================================== */
+
+.top-nav{
+    position:fixed;
+    top:15px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:9999;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    padding:12px 16px;
+
+    border-radius:100px;
+
+    background:rgba(10,15,28,.55);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.top-nav a{
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+
+    padding:10px 14px;
+
+    border-radius:50px;
+
+    transition:.3s;
+}
+
+.top-nav a:hover{
+    background:rgba(0,212,255,.1);
+    color:#00d4ff;
+}
+
+/* ======================================
+   HERO
+====================================== */
+
+#intro{
+    min-height:140vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    overflow:hidden;
+}
+
+#hero-video{
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    min-width:100%;
+    min-height:100%;
+
+    object-fit:cover;
+
+    z-index:-3;
+
+    filter:brightness(.25);
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(circle at center,
+    rgba(0,212,255,.12),
+    rgba(0,0,0,.92));
+
+    z-index:-2;
+}
+
+/* animated grid */
+
+.hero-grid{
+    position:absolute;
+    inset:0;
+
+    background-image:
+    linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+
+    background-size:60px 60px;
+
+    z-index:-1;
+}
+
+.hero-content{
+    max-width:950px;
+}
+
+.hero-badge{
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    background:rgba(0,212,255,.08);
+
+    border:1px solid rgba(0,212,255,.2);
+
+    color:#00d4ff;
+
+    margin-bottom:25px;
+}
+
+.hero-badge i{
+    color:#00d4ff;
+}
+
+.hero-content h1{
+    font-size:4.5rem;
+    font-weight:900;
+
+    margin-bottom:25px;
+}
+
+.hero-content p{
+    font-size:1.15rem;
+
+    max-width:800px;
+
+    margin:auto auto 35px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn-primary{
+    background:linear-gradient(135deg,#00d4ff,#0066ff);
+
+    color:#000;
+
+    font-weight:800;
+
+    padding:16px 30px;
+
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-4px);
+}
+
+.btn-secondary{
+
+    padding:16px 30px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    color:#fff;
+}
+
+.btn-secondary:hover{
+    border-color:#00d4ff;
+}
+
+/* ======================================
+   STATS BAR
+====================================== */
+
+.stats-bar{
+
+    position:absolute;
+    z-index:10;
+
+    bottom:50px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:min(1200px,90%);
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+}
+
+.stat-box{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    padding:25px;
+
+    border-radius:18px;
+
+    text-align:center;
+}
+
+.stat-box h3{
+    color:#00d4ff;
+    font-size:2rem;
+    margin-bottom:8px;
+}
+
+.stat-box p{
+    color:#d7d7d7;
+}
+
+/* ======================================
+   SECTION TITLES
+====================================== */
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:750px;
+    margin:auto;
+}
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+@media(max-width:992px){
+
+.hero-content h1{
+    font-size:3rem;
+}
+
+.stats-bar{
+    grid-template-columns:repeat(2,1fr);
+    bottom:20px;
+}
+}
+
+@media(max-width:768px){
+
+.top-nav{
+    width:95%;
+    overflow:auto;
+    justify-content:flex-start;
+}
+
+.hero-content h1{
+    font-size:2.2rem;
+}
+
+.hero-content p{
+    font-size:1rem;
+}
+
+.stats-bar{
+    position:relative;
+    width:100%;
+    margin-top:40px;
+
+    grid-template-columns:1fr;
+}
+}
+
+</style>
+
+</head>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav class="top-nav">
+
+<a href="index.html">Home</a>
+<a href="about-us.html">About</a>
+<a href="products.html">Products & Services</a>
+<a href="consultancy.html">Consultancy</a>
+<a href="contact-us.html">Contact</a>
+
+</nav>
+
+<!-- HERO -->
+
+<section id="intro">
+
+<video autoplay muted loop playsinline preload="metadata" id="hero-video">
+    <source src="videos/hero-video.mp4" type="video/mp4">
+</video>
+
+<div class="hero-overlay"></div>
+
+<div class="hero-grid"></div>
+
+<div class="hero-content">
+
+<div class="hero-badge">
+    <i class="fa-solid fa-sparkles"></i>
+    Enterprise AI Infrastructure
+</div>
+
+<h1>
+Transforming Global Enterprises
+Through Intelligent AI Systems
+</h1>
+
+<p>
+TKSR Product Services builds enterprise-grade AI platforms,
+automation ecosystems, intelligent assistants, cloud-native
+infrastructure, and decision intelligence systems that help
+organizations scale securely and efficiently.
+</p>
+
+<div class="hero-buttons">
+
+<a href="products.html" class="btn-primary">
+Explore Capabilities
+</a>
+
+<a href="consultation.html" class="btn-secondary">
+Request Consultation
+</a>
+
+</div>
+
+</div>
+
+<div class="stats-bar" style="z-index:10;">
+
+<div class="stat-box">
+    <h3>99.9%</h3>
+    <p>Availability</p>
+</div>
+
+<div class="stat-box">
+    <h3>24/7</h3>
+    <p>AI Operations</p>
+</div>
+
+<div class="stat-box">
+    <h3>50+</h3>
+    <p>Automation Workflows</p>
+</div>
+
+<div class="stat-box">
+    <h3>100%</h3>
+    <p>Enterprise Focused</p>
+</div>
+
+</div>
+
+</section>
+<!-- ==========================================
+ABOUT SECTION
+========================================== -->
+
+<style>
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about-card{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    padding:35px;
+    border-radius:20px;
+}
+
+.about-card h3{
+    margin-bottom:20px;
+    color:#00d4ff;
+}
+
+.about-list{
+    list-style:none;
+}
+
+.about-list li{
+    margin-bottom:15px;
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+}
+
+.about-list i{
+    color:#00d4ff;
+    margin-top:4px;
+}
+
+@media(max-width:900px){
+.about-grid{
+    grid-template-columns:1fr;
+}
+}
+
+/* ==========================================
+SERVICES
+========================================== */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.service-card{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:35px;
+    border-radius:20px;
+
+    transition:.35s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    border-color:rgba(0,212,255,.45);
+}
+
+.service-icon{
+    width:70px;
+    height:70px;
+
+    border-radius:18px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:20px;
+
+    background:rgba(0,212,255,.08);
+}
+
+.service-icon i{
+    font-size:28px;
+    color:#00d4ff;
+}
+
+.service-card h3{
+    margin-bottom:15px;
+}
+
+/* ==========================================
+PRODUCTS
+========================================== */
+
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    background:linear-gradient(
+    180deg,
+    rgba(255,255,255,.05),
+    rgba(255,255,255,.02));
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:35px;
+    border-radius:22px;
+}
+
+.product-card h3{
+    color:#00d4ff;
+    margin-bottom:18px;
+}
+
+.product-card ul{
+    list-style:none;
+}
+
+.product-card li{
+    margin-bottom:12px;
+}
+
+/* ==========================================
+LOGOS
+========================================== */
+
+.logo-strip{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.logo-card{
+    text-align:center;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:16px;
+
+    padding:35px;
+}
+
+.logo-card i{
+    font-size:40px;
+    color:#00d4ff;
+    margin-bottom:15px;
+}
+
+/* ==========================================
+CASE STUDIES
+========================================== */
+
+.case-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.case-card{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+    padding:35px;
+}
+
+.case-tag{
+
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    padding:8px 14px;
+
+    border-radius:50px;
+
+    background:rgba(0,212,255,.08);
+
+    border:1px solid rgba(0,212,255,.2);
+
+    color:#00d4ff;
+}
+
+.case-card h3{
+    margin-bottom:15px;
+}
+
+.case-result{
+    margin-top:20px;
+
+    color:#00d4ff;
+    font-weight:700;
+}
+
+</style>
+
+<!-- ABOUT -->
+
+<section id="about" class="wrapper">
+
+<div class="inner">
+
+<div class="section-title">
+
+<h2>About TKSR Product Services</h2>
+
+<p>
+Building enterprise-grade artificial intelligence systems,
+automation platforms, and scalable digital infrastructure
+for the next generation of global organizations.
+</p>
+
+</div>
+
+<div class="about-grid">
+
+<div>
+
+<h2 style="margin-bottom:25px;">
+Enterprise AI Built For Real Outcomes
+</h2>
+
+<p style="margin-bottom:20px;">
+TKSR Product Services develops secure, scalable,
+and production-ready AI ecosystems that help
+organizations accelerate innovation, automate
+operations, and improve enterprise decision-making.
+</p>
+
+<p>
+Our approach focuses on measurable business impact,
+responsible AI deployment, and long-term technology
+transformation.
+</p>
+
+</div>
+
+<div class="about-card">
+
+<h3>Why Organizations Choose TKSR</h3>
+
+<ul class="about-list">
+
+<li>
+<i class="fa-solid fa-check"></i>
+<span>Enterprise-grade AI architecture and governance.</span>
+</li>
+
+<li>
+<i class="fa-solid fa-check"></i>
+<span>Secure cloud-native deployment models.</span>
+</li>
+
+<li>
+<i class="fa-solid fa-check"></i>
+<span>Advanced automation and workflow orchestration.</span>
+</li>
+
+<li>
+<i class="fa-solid fa-check"></i>
+<span>Predictive intelligence and analytics.</span>
+</li>
+
+<li>
+<i class="fa-solid fa-check"></i>
+<span>Long-term transformation strategy and execution.</span>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services" class="wrapper">
+
+<div class="inner">
+
+<div class="section-title">
+
+<h2>Core AI Capabilities</h2>
+
+<p>
+Comprehensive enterprise solutions designed to support
+intelligent automation, decision intelligence,
+and scalable AI operations.
+</p>
+
+</div>
+
+<div class="services-grid">
+
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-brain"></i>
+</div>
+
+<h3>AI Intelligence Systems</h3>
+
+<p>
+Machine learning and decision intelligence
+platforms built for enterprise environments.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-robot"></i>
+</div>
+
+<h3>Automation Platforms</h3>
+
+<p>
+End-to-end workflow automation and intelligent
+business process management.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-cloud"></i>
+</div>
+
+<h3>Cloud Infrastructure</h3>
+
+<p>
+Highly scalable cloud-native architecture
+optimized for AI workloads.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-shield-halved"></i>
+</div>
+
+<h3>Secure AI Systems</h3>
+
+<p>
+Governance, compliance, privacy,
+and enterprise security frameworks.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-comments"></i>
+</div>
+
+<h3>AI Assistants</h3>
+
+<p>
+Enterprise virtual assistants and
+intelligent conversational systems.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-chart-line"></i>
+</div>
+
+<h3>Business Intelligence</h3>
+
+<p>
+Predictive analytics and executive
+decision-support platforms.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section id="products" class="wrapper">
+
+<div class="inner">
+
+<div class="section-title">
+
+<h2>Enterprise Product Portfolio</h2>
+
+<p>
+A growing ecosystem of intelligent products
+designed for modern enterprises.
+</p>
+
+</div>
+
+<div class="products-grid">
+
+<div class="product-card">
+
+<h3>Enterprise AI Platform</h3>
+
+<ul>
+<li>✓ Intelligent automation</li>
+<li>✓ Decision intelligence</li>
+<li>✓ Real-time analytics</li>
+<li>✓ Multi-cloud deployment</li>
+</ul>
+
+</div>
+
+<div class="product-card">
+
+<h3>AI Assistant Suite</h3>
+
+<ul>
+<li>✓ Internal knowledge assistants</li>
+<li>✓ Employee productivity tools</li>
+<li>✓ Customer engagement systems</li>
+<li>✓ Secure enterprise deployment</li>
+</ul>
+
+</div>
+
+<div class="product-card">
+
+<h3>Automation Cloud</h3>
+
+<ul>
+<li>✓ Workflow orchestration</li>
+<li>✓ Process automation</li>
+<li>✓ API integration</li>
+<li>✓ Monitoring dashboards</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CLIENT ECOSYSTEM -->
+
+<section class="wrapper">
+
+<div class="inner">
+
+<div class="section-title">
+
+<h2>Technology Ecosystem</h2>
+
+<p>
+Built on modern cloud, data, and AI foundations.
+</p>
+
+</div>
+
+<div class="logo-strip">
+
+<div class="logo-card">
+<i class="fa-solid fa-cloud"></i>
+<h4>Cloud</h4>
+</div>
+
+<div class="logo-card">
+<i class="fa-solid fa-database"></i>
+<h4>Data</h4>
+</div>
+
+<div class="logo-card">
+<i class="fa-solid fa-brain"></i>
+<h4>AI</h4>
+</div>
+
+<div class="logo-card">
+<i class="fa-solid fa-lock"></i>
+<h4>Security</h4>
+</div>
+
+<div class="logo-card">
+<i class="fa-solid fa-gears"></i>
+<h4>Automation</h4>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CASE STUDIES -->
+
+<section id="case-studies" class="wrapper">
+
+<div class="inner">
+
+<div class="section-title">
+
+<h2>Transformation Outcomes</h2>
+
+<p>
+Representative examples of enterprise value
+created through intelligent systems.
+</p>
+
+</div>
+
+<div class="case-grid">
+
+<div class="case-card">
+
+<span class="case-tag">Automation</span>
+
+<h3>Enterprise Workflow Transformation</h3>
+
+<p>
+Automated operational processes across multiple
+departments, reducing manual effort and improving
+business efficiency.
+</p>
+
+<div class="case-result">
+40% Process Efficiency Improvement
+</div>
+
+</div>
+
+<div class="case-card">
+
+<span class="case-tag">AI Intelligence</span>
+
+<h3>Decision Intelligence Platform</h3>
+
+<p>
+Implemented predictive analytics and executive
+dashboards for strategic planning and forecasting.
+</p>
+
+<div class="case-result">
+60% Faster Insights
+</div>
+
+</div>
+
+<div class="case-card">
+
+<span class="case-tag">Cloud AI</span>
+
+<h3>Scalable AI Infrastructure</h3>
+
+<p>
+Built cloud-native AI environments capable of
+supporting enterprise-wide intelligent services.
+</p>
+
+<div class="case-result">
+99.9% Availability
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<style>
+
+/* =====================================
+CEO SECTION
+===================================== */
+
+.ceo-grid{
+    display:grid;
+    grid-template-columns:420px 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.ceo-image img{
+    width:100%;
+    border-radius:24px;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 25px 80px rgba(0,0,0,.4);
+}
+
+.ceo-name{
+    font-size:2rem;
+    font-weight:800;
+    margin-top:20px;
+}
+
+.ceo-title{
+    color:#00d4ff;
+    margin-top:10px;
+    display:block;
+}
+
+@media(max-width:900px){
+.ceo-grid{
+    grid-template-columns:1fr;
+}
+}
+
+/* =====================================
+TESTIMONIALS
+===================================== */
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.testimonial-card{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:35px;
+}
+
+.testimonial-card p{
+    margin-bottom:20px;
+}
+
+.testimonial-author{
+    color:#00d4ff;
+    font-weight:700;
+}
+
+/* =====================================
+FAQ
+===================================== */
+
+.faq-container{
+    max-width:900px;
+    margin:auto;
+}
+
+.faq-item{
+    margin-bottom:18px;
+    border-radius:18px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.faq-question{
+    background:rgba(255,255,255,.04);
+    padding:22px;
+    cursor:pointer;
+    font-weight:700;
+}
+
+.faq-answer{
+    display:none;
+    padding:22px;
+    background:#0d1320;
+}
+
+.faq-item.active .faq-answer{
+    display:block;
+}
+
+/* =====================================
+CONTACT
+===================================== */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 400px;
+    gap:40px;
+}
+
+.contact-form{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    padding:40px;
+    border-radius:24px;
+}
+
+.contact-form label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+    padding:16px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:12px;
+
+    color:#fff;
+
+    margin-bottom:20px;
+}
+
+.contact-form button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(
+    135deg,
+    #00d4ff,
+    #0066ff);
+
+    color:#000;
+
+    font-weight:800;
+
+    cursor:pointer;
+}
+
+.contact-info{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:40px;
+
+    border-radius:24px;
+}
+
+.contact-info h3{
+    margin-bottom:25px;
+}
+
+.contact-info p{
+    margin-bottom:20px;
+}
+
+.social-links{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.social-links a{
+
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(255,255,255,.05);
+
+    color:#fff;
+
+    transition:.3s;
+}
+
+.social-links a:hover{
+    background:#00d4ff;
+    color:#000;
+}
+
+@media(max-width:900px){
+
+.contact-grid{
+    grid-template-columns:1fr;
+}
+}
+
+/* =====================================
+FOOTER
+===================================== */
+
+footer{
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding:40px 8%;
+
+    text-align:center;
+}
+
+footer p{
+    color:#999;
+}
+
+/* =====================================
+ANIMATION
+===================================== */
+
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+</style>
+
+<!-- LEADERSHIP -->
+
+<section class="wrapper">
+
+<div class="inner">
+
+<div class="section-title">
+
+<h2>Leadership Vision</h2>
+
+<p>
+Driving enterprise transformation through
+responsible artificial intelligence and scalable
+technology innovation.
+</p>
+
+</div>
+
+<div class="ceo-grid reveal">
+
+<div class="ceo-image">
+<img src="images/ceo.jpg" alt="Founder and CEO">
+</div>
+
+<div>
+
+<h2>
+Building The Future Of Enterprise AI
+</h2>
+
+<p style="margin-top:20px;">
+Our mission is to help organizations unlock
+the full potential of intelligent systems while
+maintaining security, transparency, and
+long-term business value.
+</p>
+
+<p style="margin-top:20px;">
+We believe AI should move beyond experimentation
+and become a trusted foundation for enterprise
+growth and transformation.
+</p>
+
+<div class="ceo-name">
+PUSHPINDER SINGH
+</div>
+
+<span class="ceo-title">
+Founder & CEO
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section id="testimonials" class="wrapper">
+
+<div class="inner">
+
+<div class="section-title">
+
+<h2>What Organizations Value</h2>
+
+<p>
+Representative feedback themes from enterprise
+engagements and transformation initiatives.
+</p>
+
+</div>
+
+<div class="testimonial-grid">
+
+<div class="testimonial-card reveal">
+
+<p>
+"Exceptional strategic thinking and a strong
+focus on practical AI deployment."
+</p>
+
+<div class="testimonial-author">
+Enterprise Technology Leader
+</div>
+
+</div>
+
+<div class="testimonial-card reveal">
+
+<p>
+"The automation architecture significantly
+improved operational efficiency."
+</p>
+
+<div class="testimonial-author">
+Operations Executive
+</div>
+
+</div>
+
+<div class="testimonial-card reveal">
+
+<p>
+"Strong technical depth combined with business
+outcome focus."
+</p>
+
+<div class="testimonial-author">
+Digital Transformation Director
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section id="faq" class="wrapper">
+
+<div class="inner">
+
+<div class="section-title">
+
+<h2>Frequently Asked Questions</h2>
+
+</div>
+
+<div class="faq-container">
+
+<div class="faq-item">
+
+<div class="faq-question">
+What industries do you support?
+</div>
+
+<div class="faq-answer">
+We support organizations across technology,
+manufacturing, healthcare, finance, logistics,
+and enterprise services.
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<div class="faq-question">
+Do you provide AI consulting?
+</div>
+
+<div class="faq-answer">
+Yes. We provide strategic AI consulting,
+architecture planning, implementation guidance,
+and transformation roadmaps.
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<div class="faq-question">
+Can solutions be deployed securely?
+</div>
+
+<div class="faq-answer">
+Security, compliance, governance, and enterprise
+deployment standards are built into every solution.
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="wrapper">
+
+<div class="inner">
+
+<div class="section-title">
+
+<h2>Request Consultation</h2>
+
+<p>
+Speak with our team about enterprise AI,
+automation, and digital transformation initiatives.
+</p>
+
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-form">
+
+<form action="https://formspree.io/f/mdabrpdj" method="POST">
+
+<label for="name">Full Name</label> <input
+id="name"
+type="text"
+name="name"
+required>
+
+<label for="email">Business Email</label> <input
+id="email"
+type="email"
+name="email"
+required>
+
+<label for="message">Requirement</label>
+
+<textarea
+id="message"
+name="message"
+rows="6"
+required></textarea>
+
+<button type="submit">
+Submit Request
+</button>
+
+</form>
+
+</div>
+
+<div class="contact-info">
+
+<h3>Contact Information</h3>
+
+<p>
+info@tksrproductservices.com
+</p>
+
+<p>
+Enterprise AI Systems,
+Automation Platforms,
+Cloud Infrastructure,
+Consulting Services
+</p>
+
+<div class="social-links">
+
+<a href="#" aria-label="LinkedIn">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="#" aria-label="GitHub">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="#" aria-label="X">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 TKSR Product Services.
+All Rights Reserved.
+</p>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+/* FAQ */
+
+document.querySelectorAll(".faq-question")
+.forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+item.parentElement.classList.toggle("active");
+
+});
+
+});
+
+/* REVEAL ANIMATION */
+
+const reveals =
+document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll",()=>{
+
+reveals.forEach(element=>{
+
+const top =
+element.getBoundingClientRect().top;
+
+if(top < window.innerHeight - 100){
+
+element.classList.add("active");
+
+}
+
+});
+
+});
+
+/* AUTO TRIGGER ON LOAD */
+
+window.dispatchEvent(new Event("scroll"));
+
+</script>
+
+</body>
+</html>
