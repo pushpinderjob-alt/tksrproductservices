@@ -1,111 +1,132 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Current Jobs | TKSR Product Services</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			body { background:#05070d; color:#eaeaea; font-family:"Inter", sans-serif; }
-			section.wrapper { padding: 90px 0; }
-			p { line-height: 1.8; opacity:0.9; }
-			.job-grid {
-				display:grid;
-				grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-				gap: 16px;
-				margin-top: 22px;
-			}
-			.job {
-				border-radius: 14px;
-				border: 1px solid rgba(255,255,255,0.08);
-				background: rgba(255,255,255,0.03);
-				padding: 18px;
-			}
-			.job h3 { color:#ffffff; margin-bottom:6px; font-size:1.1rem; }
-			.badge {
-				display:inline-block;
-				padding: 6px 10px;
-				border-radius: 999px;
-				border: 1px solid rgba(0,212,255,0.3);
-				background: rgba(0,212,255,0.08);
-				color:#00d4ff;
-				font-weight:700;
-				font-size: 0.9rem;
-				margin-bottom: 10px;
-			}
-		</style>
-	</head>
-	<body class="is-preload">
-		<header id="header">
-			<a href="index.html" class="title">TKSR</a>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about-us.html">About</a></li>
-					<li><a href="current-jobs.html" class="active">Current Jobs</a></li>
-					<li><a href="contact-us.html">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Careers | TKSR Product Services</title>
+    <meta name="description" content="Join TKSR. We're building secure, enterprise-grade AI systems. Explore current openings in production ML, AI governance and enterprise automation." />
 
-		<div id="wrapper">
-			<section id="main" class="wrapper">
-				<div class="inner">
-					<h1 class="major">Current Openings (AI / Engineering)</h1>
-					<p>
-						We’re building secure, enterprise-grade AI systems. If you’re passionate about
-						production ML, automation, and governance, we’d like to hear from you.
-					</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/tksr.css" />
+</head>
+<body>
 
-					<div class="job-grid">
-						<div class="job">
-							<div class="badge"><i class="fa-solid fa-microchip" style="margin-right:8px;"></i>ML Engineer</div>
-							<h3>Production Machine Learning</h3>
-							<p>Deploy ML pipelines with observability, reliability, and security-first practices.</p>
-						</div>
-						<div class="job">
-							<div class="badge"><i class="fa-solid fa-shield" style="margin-right:8px;"></i>AI Governance</div>
-							<h3>Security & Compliance Specialist</h3>
-							<p>Design governance frameworks: auditability, access control, and safe deployment guardrails.</p>
-						</div>
-						<div class="job">
-							<div class="badge"><i class="fa-solid fa-diagram-project" style="margin-right:8px;"></i>Automation</div>
-							<h3>Enterprise Automation Architect</h3>
-							<p>Build workflow automation patterns integrating AI components into business processes.</p>
-						</div>
-					</div>
+<!-- ================= NAV ================= -->
+<nav class="nav" aria-label="Primary navigation">
+    <a href="index.html" class="logo">TKSR<span>.</span></a>
+    <div class="nav-links">
+        <a href="about-us.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="ai-readiness-quiz.html">AI Readiness</a>
+        <a href="consultancy.html">Consultancy</a>
+        <a href="current-jobs.html" class="active">Careers</a>
+        <a href="contact-us.html">Contact</a>
+    </div>
+    <a href="consultation.html" class="btn btn-primary btn-sm nav-cta">Book a Consultation</a>
+</nav>
 
-					<div style="margin-top:28px;">
-						<a href="contact-us.html" class="button primary" style="display:inline-block;">Apply / Connect</a>
-						<a href="thanks.html" class="button" style="display:inline-block; margin-left:12px;">What happens next</a>
-					</div>
-				</div>
-			</section>
-		</div>
+<!-- ================= PAGE HERO ================= -->
+<header class="page-hero">
+    <div class="container">
+        <span class="eyebrow"><i class="fa-solid fa-briefcase"></i> Careers</span>
+        <h1>Build the future of enterprise AI</h1>
+        <p>
+            We're building secure, enterprise-grade AI systems. If you're passionate about
+            production ML, automation and governance, we'd like to hear from you.
+        </p>
+    </div>
+</header>
 
-		<footer id="footer" class="wrapper alt">
-			<div class="inner">
-				<ul class="menu">
-					<li>&copy; TKSR Product Services. All rights reserved.</li>
-					<li>AI Labs based on <a href="http://tksrglobaltrade.com">NEXUS</a></li>
-				</ul>
-			</div>
-		</footer>
+<!-- ================= JOBS ================= -->
+<section class="section">
+    <div class="container">
+        <span class="eyebrow"><i class="fa-solid fa-list-check"></i> Current Openings</span>
+        <h2 class="section-title">AI / Engineering roles</h2>
 
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+        <div class="grid grid-3 mt-3">
+            <article class="card">
+                <span class="badge"><i class="fa-solid fa-microchip" style="margin-right:8px;"></i>ML Engineer</span>
+                <h3>Production Machine Learning</h3>
+                <p>Deploy ML pipelines with observability, reliability and security-first practices at enterprise scale.</p>
+                <a href="contact-us.html" class="link">Apply / Connect <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+            <article class="card">
+                <span class="badge"><i class="fa-solid fa-shield" style="margin-right:8px;"></i>AI Governance</span>
+                <h3>Security &amp; Compliance Specialist</h3>
+                <p>Design governance frameworks: auditability, access control and safe deployment guardrails.</p>
+                <a href="contact-us.html" class="link">Apply / Connect <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+            <article class="card">
+                <span class="badge"><i class="fa-solid fa-diagram-project" style="margin-right:8px;"></i>Automation</span>
+                <h3>Enterprise Automation Architect</h3>
+                <p>Build workflow automation patterns integrating AI components into business processes.</p>
+                <a href="contact-us.html" class="link">Apply / Connect <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+        </div>
+
+        <div class="cta-band mt-4">
+            <h2>Don't see your role?</h2>
+            <p>We're always interested in exceptional talent. Send us your details and tell us how you'd contribute.</p>
+            <a href="contact-us.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="brand">
+                <a href="index.html" class="logo" style="font-size:1.3rem;">TKSR<span style="color:var(--accent);">.</span></a>
+                <p style="margin-top:14px;">
+                    TKSR Product Services builds enterprise-grade AI systems, automation
+                    platforms and scalable intelligence infrastructure for global businesses.
+                </p>
+                <div class="social">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html#strategy">AI Strategy Consulting</a></li>
+                    <li><a href="services.html#readiness">AI Readiness Assessment</a></li>
+                    <li><a href="services.html#workshops">AI &amp; Automation Workshops</a></li>
+                    <li><a href="services.html#training">AI Training Courses</a></li>
+                    <li><a href="services.html#governance">AI Governance</a></li>
+                    <li><a href="services.html#data">AI Data Strategy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="consultancy.html">Consultancy</a></li>
+                    <li><a href="consultation.html">Consultation</a></li>
+                    <li><a href="current-jobs.html">Careers</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Get Started</h4>
+                <ul>
+                    <li><a href="ai-readiness-quiz.html">Free AI Readiness Assessment</a></li>
+                    <li><a href="contact-us.html">Make an Enquiry</a></li>
+                </ul>
+                <p style="font-size:0.9rem; margin-top:16px;">Email: <a href="mailto:info@tksrproductservices.com">info@tksrproductservices.com</a></p>
+            </div>
+        </div>
+        <div class="bottom">
+            <span>&copy; TKSR Product Services. All rights reserved.</span>
+            <span>AI Labs based on <a href="http://tksrglobaltrade.com">NEXUS</a></span>
+        </div>
+    </div>
+</footer>
+
+</body>
 </html>
-

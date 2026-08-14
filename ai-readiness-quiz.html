@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Free AI Readiness Assessment | TKSR Product Services</title>
+    <meta name="description" content="Take our free AI readiness assessment. Get an instant high-level view of how ready your business is to adopt AI, with recommended next steps." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/tksr.css" />
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="nav" aria-label="Primary navigation">
+    <a href="index.html" class="logo">TKSR<span>.</span></a>
+    <div class="nav-links">
+        <a href="about-us.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="ai-readiness-quiz.html" class="active">AI Readiness</a>
+        <a href="consultancy.html">Consultancy</a>
+        <a href="current-jobs.html">Careers</a>
+        <a href="contact-us.html">Contact</a>
+    </div>
+    <a href="consultation.html" class="btn btn-primary btn-sm nav-cta">Book a Consultation</a>
+</nav>
+
+<!-- ================= PAGE HERO ================= -->
+<header class="page-hero">
+    <div class="container">
+        <span class="eyebrow"><i class="fa-solid fa-clipboard-check"></i> Free Assessment</span>
+        <h1>How ready is your business for AI?</h1>
+        <p>
+            Answer nine quick questions and get an instant, high-level view of your
+            organisation's AI readiness — plus tailored recommendations for the next step.
+            No sign-up required.
+        </p>
+    </div>
+</header>
+
+<!-- ================= QUIZ ================= -->
+<section class="section">
+    <div class="container">
+        <div class="quiz-wrap">
+
+            <div class="form-card" id="quiz-app">
+                <!-- Progress -->
+                <div class="quiz-progress"><div class="bar" id="quiz-bar"></div></div>
+
+                <!-- Steps injected by JS -->
+                <div id="quiz-body"></div>
+
+                <!-- Result -->
+                <div class="quiz-result" id="quiz-result">
+                    <div class="center">
+                        <div class="result-gauge" id="result-gauge" style="--score:0;">
+                            <div class="inner">
+                                <div class="pct" id="result-pct">0%</div>
+                                <div class="txt">AI Readiness</div>
+                            </div>
+                        </div>
+                        <h2 id="result-title">AI-Ready</h2>
+                        <p id="result-text" style="max-width:560px; margin:0 auto 8px;"></p>
+                        <p id="result-suggest" style="max-width:560px; margin:0 auto 28px; font-size:0.95rem;"></p>
+                        <div class="center" style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+                            <a href="contact-us.html" class="btn btn-primary">Get a Full Assessment</a>
+                            <button type="button" class="btn btn-ghost" onclick="restartQuiz()">Retake Quiz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= NEXT STEPS CTA ================= -->
+<section class="section section-soft">
+    <div class="container">
+        <div class="cta-band">
+            <h2>Want a detailed readiness assessment?</h2>
+            <p>Our consultants can evaluate your data, systems, skills and compliance posture in depth — and deliver a practical improvement roadmap tailored to your business.</p>
+            <a href="contact-us.html" class="btn btn-primary">Speak to an AI Consultant</a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="brand">
+                <a href="index.html" class="logo" style="font-size:1.3rem;">TKSR<span style="color:var(--accent);">.</span></a>
+                <p style="margin-top:14px;">
+                    TKSR Product Services builds enterprise-grade AI systems, automation
+                    platforms and scalable intelligence infrastructure for global businesses.
+                </p>
+                <div class="social">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html#strategy">AI Strategy Consulting</a></li>
+                    <li><a href="services.html#readiness">AI Readiness Assessment</a></li>
+                    <li><a href="services.html#workshops">AI &amp; Automation Workshops</a></li>
+                    <li><a href="services.html#training">AI Training Courses</a></li>
+                    <li><a href="services.html#governance">AI Governance</a></li>
+                    <li><a href="services.html#data">AI Data Strategy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="consultancy.html">Consultancy</a></li>
+                    <li><a href="consultation.html">Consultation</a></li>
+                    <li><a href="current-jobs.html">Careers</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Get Started</h4>
+                <ul>
+                    <li><a href="ai-readiness-quiz.html">Free AI Readiness Assessment</a></li>
+                    <li><a href="contact-us.html">Make an Enquiry</a></li>
+                </ul>
+                <p style="font-size:0.9rem; margin-top:16px;">Email: <a href="mailto:info@tksrproductservices.com">info@tksrproductservices.com</a></p>
+            </div>
+        </div>
+        <div class="bottom">
+            <span>&copy; TKSR Product Services. All rights reserved.</span>
+            <span>AI Labs based on <a href="http://tksrglobaltrade.com">NEXUS</a></span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const QUESTIONS = [
+    {
+        q: "How mature is your data today?",
+        h: "Data quality and governance are the foundation of any AI programme.",
+        options: [
+            { label: "Data is siloed and inconsistent across teams", score: 0 },
+            { label: "We have some organised data, but quality varies", score: 1 },
+            { label: "Most key data is governed, documented and accessible", score: 2 },
+            { label: "We run a mature, governed data platform", score: 3 }
+        ]
+    },
+    {
+        q: "Does your leadership actively support AI initiatives?",
+        h: "Senior sponsorship is the strongest predictor of AI success.",
+        options: [
+            { label: "Not yet — AI is only discussed informally", score: 0 },
+            { label: "A few individuals are interested", score: 1 },
+            { label: "Leadership is engaged and sponsoring pilots", score: 2 },
+            { label: "AI is a board-level strategic priority", score: 3 }
+        ]
+    },
+    {
+        q: "How would you describe your team's AI skills?",
+        h: "Practical skills determine whether adoption actually sticks.",
+        options: [
+            { label: "Little or no hands-on AI experience", score: 0 },
+            { label: "A small number of enthusiasts", score: 1 },
+            { label: "Several teams use AI tools in daily work", score: 2 },
+            { label: "We have dedicated AI and data talent", score: 3 }
+        ]
+    },
+    {
+        q: "Do you have clear business problems that AI could address?",
+        h: "AI works best when tied to specific, measurable outcomes.",
+        options: [
+            { label: "Not defined yet", score: 0 },
+            { label: "Broad ideas, but nothing prioritised", score: 1 },
+            { label: "A few candidate use cases are documented", score: 2 },
+            { label: "A prioritised portfolio of use cases exists", score: 3 }
+        ]
+    },
+    {
+        q: "How are your business processes documented today?",
+        h: "Automation depends on understanding how work actually flows.",
+        options: [
+            { label: "Largely undocumented / tribal knowledge", score: 0 },
+            { label: "Partially documented", score: 1 },
+            { label: "Core processes are well documented", score: 2 },
+            { label: "Process maps and owners exist across the business", score: 3 }
+        ]
+    },
+    {
+        q: "How do you handle data security and compliance?",
+        h: "Secure, governed AI is non-negotiable for enterprise deployment.",
+        options: [
+            { label: "No formal policies yet", score: 0 },
+            { label: "Basic policies, inconsistently applied", score: 1 },
+            { label: "Established security and compliance frameworks", score: 2 },
+            { label: "Audited, mature governance covering AI", score: 3 }
+        ]
+    },
+    {
+        q: "Does your organisation embrace change and experimentation?",
+        h: "Culture determines whether pilots become production outcomes.",
+        options: [
+            { label: "Change is resisted", score: 0 },
+            { label: "Willing, but risk-averse", score: 1 },
+            { label: "Comfortable running pilots and learning", score: 2 },
+            { label: "Innovation is actively encouraged and rewarded", score: 3 }
+        ]
+    },
+    {
+        q: "Do you have budget available to invest in AI?",
+        h: "Real adoption requires committed funding, not just enthusiasm.",
+        options: [
+            { label: "No dedicated budget", score: 0 },
+            { label: "Small discretionary funds only", score: 1 },
+            { label: "Budget approved for AI experiments", score: 2 },
+            { label: "Dedicated AI and transformation budget", score: 3 }
+        ]
+    },
+    {
+        q: "How are AI outcomes measured in your organisation?",
+        h: "You can't improve what you don't measure.",
+        options: [
+            { label: "We don't measure AI impact yet", score: 0 },
+            { label: "Ad-hoc tracking only", score: 1 },
+            { label: "Key pilots have defined success metrics", score: 2 },
+            { label: "Systematic ROI and efficiency tracking exists", score: 3 }
+        ]
+    }
+];
+
+let current = 0;
+const answers = new Array(QUESTIONS.length).fill(null);
+
+function render() {
+    const body = document.getElementById('quiz-body');
+    const bar = document.getElementById('quiz-bar');
+    bar.style.width = (current / QUESTIONS.length * 100) + '%';
+
+    if (current >= QUESTIONS.length) { showResult(); return; }
+
+    const item = QUESTIONS[current];
+    body.innerHTML = `
+        <div class="quiz-step active">
+            <span class="badge">Question ${current + 1} of ${QUESTIONS.length}</span>
+            <h2>${item.q}</h2>
+            <p class="q">${item.h}</p>
+            <div class="quiz-options">
+                ${item.options.map((opt, i) => `
+                    <button type="button" class="quiz-option${answers[current] === i ? ' selected' : ''}"
+                        onclick="selectOption(${i})">${opt.label}</button>
+                `).join('')}
+            </div>
+            <div class="quiz-nav">
+                <button type="button" class="btn btn-ghost btn-sm" ${current === 0 ? 'disabled style="opacity:.4"' : ''} onclick="prevStep()"><i class="fa-solid fa-arrow-left" style="margin-right:6px;"></i> Back</button>
+                <button type="button" class="btn btn-primary btn-sm" onclick="nextStep()" ${answers[current] === null ? 'disabled style="opacity:.5"' : ''}>Next <i class="fa-solid fa-arrow-right" style="margin-left:6px;"></i></button>
+            </div>
+        </div>`;
+}
+
+function selectOption(i) {
+    answers[current] = i;
+    const opts = document.querySelectorAll('.quiz-option');
+    opts.forEach((o, idx) => o.classList.toggle('selected', idx === i));
+    document.querySelector('.quiz-nav .btn-primary').disabled = false;
+    document.querySelector('.quiz-nav .btn-primary').style.opacity = 1;
+}
+
+function nextStep() {
+    if (answers[current] === null) return;
+    current++;
+    render();
+}
+
+function prevStep() {
+    if (current === 0) return;
+    current--;
+    render();
+}
+
+function showResult() {
+    const total = QUESTIONS.length * 3;
+    const sum = answers.reduce((a, i) => a + QUESTIONS[i].options[answers[i]].score, 0);
+    const pct = Math.round(sum / total * 100);
+
+    document.getElementById('quiz-body').style.display = 'none';
+    const result = document.getElementById('quiz-result');
+    result.classList.add('show');
+    document.getElementById('result-gauge').style.setProperty('--score', pct);
+    document.getElementById('result-pct').textContent = pct + '%';
+
+    let title, text, suggest;
+    if (pct >= 80) {
+        title = 'Strong AI Readiness';
+        text = 'Your organisation is well positioned to adopt AI. You have the data, leadership support and skills to move quickly.';
+        suggest = 'Recommended: a full AI strategy consulting engagement to prioritise use cases, build the roadmap and move to implementation.';
+    } else if (pct >= 60) {
+        title = 'Developing Readiness';
+        text = 'You have solid foundations and pockets of capability, but gaps in data, skills or governance will slow adoption.';
+        suggest = 'Recommended: an AI readiness assessment and workshops to close the gaps and define prioritised, quick-win use cases.';
+    } else if (pct >= 40) {
+        title = 'Early Stage';
+        text = 'You are at the start of your AI journey. The foundations are not yet in place for reliable, secure adoption.';
+        suggest = 'Recommended: begin with an AI readiness assessment, leadership awareness and a structured training programme.';
+    } else {
+        title = 'Just Getting Started';
+        text = 'Your business is at the very beginning of its AI journey. There is significant groundwork to do before meaningful adoption.';
+        suggest = 'Recommended: start with a free consultation and AI awareness workshops to establish leadership alignment and a practical starting point.';
+    }
+
+    document.getElementById('result-title').textContent = title;
+    document.getElementById('result-text').textContent = text;
+    document.getElementById('result-suggest').textContent = suggest;
+    document.getElementById('quiz-result').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function restartQuiz() {
+    current = 0;
+    for (let i = 0; i < answers.length; i++) answers[i] = null;
+    document.getElementById('quiz-result').classList.remove('show');
+    document.getElementById('quiz-body').style.display = '';
+    render();
+}
+
+render();
+</script>
+
+</body>
+</html>
